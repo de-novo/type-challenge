@@ -18,5 +18,5 @@ namespace Includes {
         ["Kars", "Esidisi", "Wamuu", "Santana"],
         "Kars"
     >;
-    type test = Includes<[1, 2, 3, 5, 6, 7], 7>; // false
+    type test = Includes<[], null>; // false
 }
