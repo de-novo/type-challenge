@@ -13,7 +13,7 @@ namespace Omit {
         [P in keyof T as P extends K ? never : P]: T[P];
     };
     type TodoPreview = MyOmit<Todo, "description" | "title">;
-    type TodoPreview2 = MyOmit2<Todo, "description" | "title">
+    type TodoPreview2 = MyOmit2<Todo, "description" | "title">;
     const todo: TodoPreview = {
         completed: true,
     };
