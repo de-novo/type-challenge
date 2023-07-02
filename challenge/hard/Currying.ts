@@ -3,6 +3,7 @@ namespace Currying {
         T extends (...arg: any[]) => any,
         Args extends any[] = []
     >(fn: T, ...args: Args): Currying<T, Args>;
+
     type Currying<
         Fn extends (...arg: any[]) => any,
         Args extends any[] = []
@@ -18,7 +19,13 @@ namespace Currying {
     const curriedAdd: Currying<typeof add> =
         (a: number) => (b: number) => (c: number) =>
             add(a, b, c);
-    const corried = Currying(add);
+
+
+
+
+
+
+            const corried = Currying(add);
 
     const curried1 = Currying((a: string, b: number, c: boolean) => true);
 
